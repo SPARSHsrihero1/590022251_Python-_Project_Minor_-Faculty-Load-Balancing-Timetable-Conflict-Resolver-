@@ -1,84 +1,119 @@
-# 590022251_Python-_Project_Minor_-Faculty-Load-Balancing-Timetable-Conflict-Resolver-
-Faculty Load Balancing & Timetable Conflict Resolver
-📌 Overview
+# Faculty Load Balancing System using Python 
+Date: 05 Feb, 2026 !st year, 2nd Sem
 
-In colleges, faculty timetables are usually managed manually, which often leads to schedule clashes, uneven workload distribution, and frequent class rescheduling. As students, we experience these issues regularly through cancelled or shifted classes.
-This project is a simple Python-based solution that analyzes faculty timetables, detects conflicts, calculates teaching workload, and suggests better workload distribution.
+A simple Python-based system designed to analyze faculty teaching workload and suggest better distribution of classes to reduce overload and manual effort in colleges.
 
-🎯 Problem Statement
+---
 
-Faculty members may end up with overlapping classes, back-to-back lectures, or excessive weekly teaching hours. At the same time, some faculty may be underutilized. These imbalances affect teaching quality and disrupt students’ academic schedules.
+## 📌 Problem Statement
 
-✅ Objectives
+In day-to-day college life, classes often get rescheduled or cancelled because some faculty members are overloaded while others have comparatively fewer teaching hours. Faculty may also feel stressed due to uneven workload distribution. Since workload management is usually handled manually, identifying such issues and correcting them takes time and effort.
 
-Detect timetable clashes for faculty
+---
 
-Calculate weekly teaching workload
+## 🎯 Objective
 
-Identify overloaded and underloaded faculty
+The objective of this project is to create a simple, menu-driven Python application that:
+- Stores faculty teaching data day-wise
+- Calculates total weekly teaching workload
+- Identifies overloaded faculty
+- Suggests better workload distribution
+- Reduces manual effort in workload management
+- Generates a clear and readable report
 
-Suggest rule-based redistribution of classes
+---
 
-Generate a readable report for reference
+## ⚙️ Features
 
-🛠️ Technologies Used
+- Add faculty teaching data
+- Update faculty data  
+  - Update all existing days  
+  - Update a specific day  
+  - Add new teaching days
+- View faculty details
+- Calculate weekly teaching workload
+- Generate **multiple realistic load-balancing suggestions**
+- Generate a text-based report (`report.txt`)
+- Simple, user-friendly, menu-driven interface
 
-Language: Python
+---
 
-Concepts Used:
+## 🛠️ Technologies Used
 
-Lists and Dictionaries
+- **Programming Language:** Python  
+- **Concepts Used:**  
+  - Dictionaries  
+  - Functions  
+  - Loops  
+  - Conditional statements  
+  - File handling  
+  - Menu-driven programming  
 
-Functions
+No external libraries are required.
 
-Loops and Conditional Statements
+---
 
-File Handling
+## ▶️ How to Run the Project
 
-Basic Exception Handling
 
-⚙️ How the Project Works
+1. Make sure Python is installed on your system.
+2. Clone or download this repository.
+3. Open a terminal in the project directory.
+4. Run the program using:
+bash
+python faculty_load_balancer.py
+Follow the on-screen menu instructions.
 
-Faculty timetable details are entered into the system
+📊 Sample Output
 
-The program checks for overlapping time slots
+====== MENU ======
+1. Add Faculty Data
+2. Update Faculty Data
+3. View Faculty Details
+4. Calculate Faculty Workload
+5. Suggest Load Balancing
+6. Generate Report
+7. Exit
 
-Weekly teaching hours are calculated for each faculty
+Faculty Workload:
+IR: 48 hours/week
+AB: 14 hours/week
 
-Faculty workload is compared with predefined limits
+📄 Report Generation
+The program generates a file named report.txt which contains:
 
-Suggestions are generated to balance the workload
+Faculty name
+Total weekly teaching load
+Day-wise teaching hours
 
-A report is saved to a file
+Sample report.txt
+yaml
+Copy code
+FACULTY LOAD BALANCING REPORT
 
-📂 Project Structure
-Faculty_Load_Balancer/
-│
-├── faculty_load_balancer.py
-├── report.txt
-└── README.md
+Faculty: IR
+Total Load: 48 hours/week
+Mon: 8 hours
+Tue: 8 hours
+Wed: 8 hours
+Thu: 8 hours
+Fri: 8 hours
+Sat: 8 hours
 
-📈 Expected Outcome
+🔍 Project Scope Clarification
 
-Reduced timetable conflicts
+This project focuses on workload-based analysis, not exact time-slot conflict detection.
+Teaching hours are used as the primary metric, which is commonly used in academic workload management.
+Time-slot based conflict detection can be added as a future enhancement.
 
-Balanced faculty workload
+🚀 Future Scope
 
-Fewer last-minute class cancellations
+Time-slot based timetable conflict detection
+Database integration for persistent data storage
+Web-based interface for easier access
+Department-wise and subject-wise workload analysis
+Graphical workload visualization
 
-Smoother academic experience for students
+👨‍🏫 Conclusion
 
-🔮 Future Scope
-
-GUI-based application
-
-Multi-department support
-
-Automatic timetable generation
-
-Faculty and admin dashboards
-
-👤 Author
-Sparsh Srivastava
-B.Tech – Computer Science
-Semester 2 Minor Project
+This project successfully demonstrates how basic Python programming can be used to solve real-world problems in an academic environment. By automating workload calculation and providing practical suggestions, the system helps reduce manual effort and supports fair distribution of teaching responsibilities.
