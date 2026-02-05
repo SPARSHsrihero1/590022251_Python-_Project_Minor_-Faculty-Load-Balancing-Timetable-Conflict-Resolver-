@@ -1,0 +1,49 @@
+Start
+
+Initialize empty data structures to store faculty details, time slots, and workload.
+
+Input the number of faculty members.
+
+For each faculty member:
+
+Input faculty name or ID
+
+Input number of classes assigned
+
+For each class, input day and time slot
+
+Store this information in a dictionary
+
+For each faculty member:
+
+Check the entered time slots for overlapping day and time
+
+If an overlap is found, mark it as a timetable conflict
+
+Calculate total teaching hours per week for each faculty member.
+
+Compare calculated workload with the predefined maximum allowed workload.
+
+Identify:
+
+Overloaded faculty (workload above limit)
+
+Underloaded faculty (workload below limit)
+
+For each overloaded faculty member:
+
+Find suitable underloaded faculty
+
+Suggest transferring a class that does not create a timetable conflict
+
+Generate a report showing:
+
+Faculty workload
+
+Detected conflicts
+
+Suggested workload adjustments
+
+Save the report to a file for future reference.
+
+End
