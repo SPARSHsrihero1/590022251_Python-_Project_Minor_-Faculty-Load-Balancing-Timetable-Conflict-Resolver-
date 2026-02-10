@@ -21,7 +21,7 @@ def expand_day_input(day_input):
     return None
 
 
-# ---------- Core Features ----------
+# ---------- Core Features ---------
 
 def add_faculty():
     name = input("\nEnter faculty name: ").strip()
@@ -221,4 +221,5 @@ def menu():
         else:
             print("Invalid choice.")
 print("\nFaculty Load Balancing System")
+
 menu()
